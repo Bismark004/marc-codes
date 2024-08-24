@@ -1,0 +1,55 @@
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    position: relative;
+    background-color: #000;
+    overflow: hidden;
+    background: url(../Assets/pexels-apasaric-1694000.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .welcome-text {
+    font-size: 3em;
+    color: #fff;
+    position: relative;
+    animation: slideInText1 4s forwards;
+    margin-bottom: 20px;
+  }
+  
+  h1:nth-of-type(2) {
+    font-size: 2em;
+    color: #fff;
+    position: relative;
+    opacity: 0; /* Initially hidden */
+    animation: slideInText2 4s forwards 2s; /* Delayed start */
+    margin: 0;
+  }
+  
+  
+  @keyframes slideInText1 {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  @keyframes slideInText2 {
+    from {
+      opacity: 0;
+      transform: translateX(-50%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  
